@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class extends Component {
+
+  PropTypes = {
+    property: PropTypes.string.isRequired
+  };
 
   // @not mandatory
   constructor(props) {
@@ -11,7 +16,7 @@ export default class extends Component {
   render() {
     return (
       <div>
-        Hello from a class component!
+        { this.props.property }
       </div>
     );
   }
