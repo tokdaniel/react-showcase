@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { ClassComponent } from '../';
+
 const Main = props => (
-  <div>Hello React!</div>
+  <ClassComponent/>
 );
 
 export default Main;
