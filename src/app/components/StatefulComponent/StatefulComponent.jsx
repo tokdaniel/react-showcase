@@ -14,15 +14,21 @@ export default class extends Component {
     super(props);
 
     this.state = {
-      inputValue: 'Show the value here'
+      datInput: 'Show the value here'
     };
   }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  };
 
   render() {
     return (
       <div style={ style }>
-        <h2>{ this.state.inputValue }</h2>
-        <input />
+        <h2>{ this.state.datInput }</h2>
+        <input name="datInput" value={ this.state.datInput } onChange={this.handleChange}/>
       </div>
     );
   }
