@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { ClassComponent } from '../';
+import { StatefulComponent } from '../';
 
 const Main = props => (
-  <ClassComponent property={ 'SHOW THIS SHIT!!4' }/>
+  <StatefulComponent/>
 );
 
 export default Main;
