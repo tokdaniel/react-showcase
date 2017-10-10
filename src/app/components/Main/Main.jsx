@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { ContainerExample } from '../../containers';
+import { StatefulComponent } from '../../components';
 
 const Main = () => (
-  <ContainerExample />
+  <StatefulComponent />
 );
 
 export default Main;
